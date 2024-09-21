@@ -9,35 +9,35 @@
 	<form>
 		
 		<label for="name">Name: </label>
-		<input type="text" id="name" name="name"><br><br>
+		<input type="text" id="name" name="name" placeholder="Enter Name" maxlength="25" required><br><br>
 		<label for="email">Email: </label>
-		<input type="text" id="email" name="MailId"><br><br>
+		<input type="text" id="email" name="MailId" value="test@example.com" autofocus required><br><br>
 		<label for="password">Password: </label>
-		<input type="password" id="password" name="Password"><br><br>
+		<input type="password" id="password" name="Password" minlength="6" required><br><br>
 
 		<label for="category">Category: </label>
-		<select id="category" name="Category">
-			<option value="select" disabled selected>Select</option>
+		<select id="category" name="Category" required>
+			<option value="select">Select</option>
 			<option value="student">Student</option>
 			<option value="employee">Employee</option>
-			<option value="freelancer">Freelancer</option>
+			<option value="freelancer" selected>Freelancer</option>
 		</select><br><br>
 
 		<label for="eventDate">Event Date: </label>
-		<input type="Date" name="Event Date" id="eventDate"><br><br>
+		<input type="Date" name="Event Date" id="eventDate" required><br><br>
 
-		<input type="radio" name="Ticket" id="ticket">
+		<input type="radio" name="Ticket" id="ticket" required>
 		<label for="1ticket" id="ticket">1 Ticket</label>
-		<input type="radio" name="Ticket" id="ticket">
+		<input type="radio" name="Ticket" id="ticket" checked>
 		<label for="2ticket" id="ticket">2 Tickets</label>
 		<input type="radio" name="Ticket" id="ticket">
 		<label for="3ticket" id="ticket">3 Tickets</label><br><br>
 
-		<input type="checkbox" name="online" id="onlinepay">
+		<input type="checkbox" name="online" id="onlinepay" required>
 		<label for="onlinePayment" id="onlinepay">Online Payment</label><br><br>
 
 		<label for="notes" id="notes">Notes: </label><br>
-		<textarea rows="10" cols="30" name="notes" id="notes"></textarea><br><br>
+		<textarea rows="10" cols="30" name="notes" id="notes" placeholder="Add notes" required></textarea><br><br>
 
 		<button>Submit</button>
 
